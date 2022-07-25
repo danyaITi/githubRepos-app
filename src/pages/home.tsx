@@ -18,6 +18,7 @@ const Home: React.FC = () => {
         refetchOnFocus: true
     }) 
     const [getRepos, {data: repos}] = useLazyClickUsersQuery()
+
     
 
     useEffect(()=>{
@@ -56,7 +57,7 @@ const Home: React.FC = () => {
                     {data?.map((user)=> <li onClick={()=>clickUser(user.login)} key={user.id} className="py-2 px-4 hover:bg-yellow-200 transition-colors cursor-pointer">{user.login}</li>)}
                 </ul>}
                 <div className="container">
-                    { repos?.map(repo => <RepCard repo={repo} key={repo.id}/>) }
+                    { repos?.map((repo) => <RepCard repo={repo} key={repo.id}/>) }
                 </div>
             </div>
         </div>
