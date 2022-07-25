@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/deliveryPizza-app/static/css/main.93e2568c.css",
+    "main.js": "/deliveryPizza-app/static/js/main.3a56e231.js",
+    "index.html": "/deliveryPizza-app/index.html",
+    "main.93e2568c.css.map": "/deliveryPizza-app/static/css/main.93e2568c.css.map",
+    "main.3a56e231.js.map": "/deliveryPizza-app/static/js/main.3a56e231.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e2568c.css",
+    "static/js/main.3a56e231.js"
+  ]
+}
