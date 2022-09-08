@@ -1,0 +1,69 @@
+.repos-box::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .repos-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
+  
+  .repos-box::-webkit-scrollbar-thumb {
+    background-color: #93cff2;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+     transparent 25%,
+     transparent 50%,
+     rgba(255, 255, 255, .25) 50%,
+     rgba(255, 255, 255, .25) 75%,
+     transparent 75%,
+     transparent);
+}
+
+.repos-box__empty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.repos-box-loading__abs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.repos-box-loading{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+  height: 120px;
+}
+.repos-box-loading div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 8px solid #68b8e6;
+  border-radius: 50%;
+  animation: repos-box-loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #68b8e6 transparent transparent transparent;
+}
+.repos-box-loading div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.repos-box-loading div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.repos-box-loading div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes repos-box-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

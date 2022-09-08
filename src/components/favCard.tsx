@@ -21,7 +21,7 @@ const FavCard: React.FC<FavCardProps> = ({name, forks, watchers, desc, url , id}
 
     return (
         <a href={url} target="_blank">
-            <div className="border py-3 px-5 rounded mb-2 hover:shadow-md hover:bg-gray-100 transition-all">
+            <div className="border py-3 px-5 rounded mb-2 bg-white hover:shadow-md hover:bg-gray-100 transition-all">
                 <h2 className="text-lg font-bold">{name}</h2>
                 <p className="text-sm">
                     Forks: <span className="font-bold mr-2">{forks}</span>
