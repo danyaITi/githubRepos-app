@@ -2,5 +2,5 @@
 
 Чтобы запустить проект нужно прописать:
 
-git clone https://github.com/danyaITi/githubRepos-app
-Установить зависимости: npm install
+1. git clone https://github.com/danyaITi/githubRepos-app
+2. Установить зависимости: npm install
